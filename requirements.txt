@@ -1,0 +1,8 @@
+langchain
+faiss-cpu
+pypdf
+tiktoken
+transformers
+databutton
+streamlit
+requests

@@ -1,0 +1,27 @@
+version: '3'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - app1
+      - app2
+      - app3
+
+  app1:
+    build: .
+    ports:
+      - "8501"
+
+  app2:
+    build: .
+    ports:
+      - "8501"
+
+  app3:
+    build: .
+    ports:
+      - "8501"
