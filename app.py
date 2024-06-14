@@ -6,7 +6,7 @@ from database import create_connection, execute_query
 from logger import log_message
 
 API_URL = "https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "xxx"}
 	
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
